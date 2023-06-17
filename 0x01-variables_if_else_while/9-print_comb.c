@@ -10,13 +10,13 @@
  */
 int main(void)
 {
-	char n;
+	int n;
 
 	n = 0;
 
 	while (n < 10)
 	{
-		putchar(n);
+		putchar(n + '0');
 		putchar(' ');
 		putchar(',');
 		n++;
