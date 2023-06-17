@@ -9,18 +9,20 @@
 int main(void)
 {
 	char n;
+	char letter;
 
 	n = 0;
+	letter = 'a';
 
 	while (n < 10)
 	{
 		putchar(n + '0');
 		n++;
 	}
-	while (n <= 'f' && n >= 'a')
+	while (letter <= 'f')
 	{
-		putchar(n);
-		n++;
+		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
 	return (0);
