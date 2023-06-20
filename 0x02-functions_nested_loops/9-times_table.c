@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * times_table - Entry point
  *
