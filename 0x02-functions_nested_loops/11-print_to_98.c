@@ -1,5 +1,5 @@
 #include <stdio.h>
-include "main.h"
+#include "main.h"
 /**
  * print_to_98 - Entry point
  *
@@ -11,22 +11,22 @@ include "main.h"
  */
 void print_to_98(int n)
 {
-	for (n ; n >= 98 ; n--)
+	int entry;
+
+	if (n > 98)
 	{
-		if (n > 98)
+		for (entry = n ; entry > 98 ; entry--)
 		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", entry);
 		}
 	}
-	for (n ; n <= 98 ; n++)
+	else
 	{
-		if (n < 98)
+		for (entry = n ; entry < 98 ; entry++)
 		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", entry);
 		}
 	}
+	printf("98\n");
 }
+
