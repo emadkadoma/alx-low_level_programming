@@ -2,7 +2,7 @@
 /**
  * _isupper - Entry point
  *
- * Description: detect upper case
+ * Description: detect lower case
  *
  * @c: charactar to be checked
  *
@@ -10,9 +10,7 @@
  */
 int _isupper(int c)
 {
-	c = 'A';
-
-	if (c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
