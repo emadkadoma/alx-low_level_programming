@@ -8,23 +8,23 @@
  *
  * Return: always 0
  */
-void main(void)
+int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 1; n < 101; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (((n % 5) == 0) && ((n % 3) == 0))
-			printf("fizzbuzz");
-		else if ((n % 3) == 0)
-			printf("fizz");
-		else if ((n % 5) == 0)
-			printf("buzz");
+		if (i % 15 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
 		else
-			printf("%d", n);
-		if (n < 100)
+			printf("%i", i);
+		if (i < 100)
 			printf(" ");
 	}
 	printf("\n");
+	return (0);
 }
-
